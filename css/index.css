@@ -4,16 +4,19 @@
     list-style: none;
 }
 .topNode{
-    height: 56px;
+    height: 90px;
     background-color:#303440 ;
 }
 .topNode .topNodeContent{
     width: 1206px;
     height: 100%;
     margin: 0 auto;
-    background-color: white;
+    /* background-color: white; */
 }
 .topNode .topNodeContent .logo{
     float: left;
     margin-top: 14px;
 }
+/* .topNode .topNodeContent .logo .log{
+    
+} */
