@@ -57,8 +57,8 @@ window.onload = function() {
 
     // 启动自动播放
     function startAutoPlay() {
-        // 每2秒显示下一张图片
-        timer = setInterval(nextImage, 2000);
+        // 每3秒显示下一张图片
+        timer = setInterval(nextImage, 3000);
     }
 
     // 停止自动播放

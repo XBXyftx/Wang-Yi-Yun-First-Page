@@ -261,6 +261,28 @@ body{
     height: 320px;
     display: flexbox;
     background-color: #fff;
+    border-radius: 6px;
 }
-
+.toolTitle{
+    width: 206px;
+    height: 21px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.toolList{
+    width: 230px;
+    height: 58px;
+}
+.toolMore{
+    width: 230px;
+    height: 27px;
+}
+.toolListMore{
+    width: 10px;
+    height: 10px;
+    image-rendering: auto !important;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
 /* banner右侧结束 */
