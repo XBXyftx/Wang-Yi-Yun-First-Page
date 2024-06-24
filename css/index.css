@@ -1,16 +1,27 @@
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(204, 207, 208);
+    display: flex;
+}
 /* 置顶栏开始 */
+.topBase{
+    width: 100%;
+    height: auto;
+    background-color: #fff; 
+    float: left;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+   
+}
 .topNode{
     height: 56px;
     width: 1200px;
     background-color:#fff; 
-    margin-right: 222px;
-    margin-left: 222px;
-    display: block;
     line-height: 21px;
-    text-align: left;
-    position: absolute;
-    top: 0px;
-    left: 0px;
     float: left;
 }
 .topNode .logo{
@@ -43,7 +54,6 @@
     width: 28px;
     height: 18px;
     margin-top: 7px;
-    /* line-height: 36px; */
     float: left;
     font-size: 14px;
 }
@@ -120,12 +130,21 @@
 /* 置顶栏结束 */
 
 /* 轮播图大区开始 */
+.bannerBase{
+    flex-grow: 1;
+    height: 340px;
+    float: left;
+    text-align: center;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 .bannerArea{
     width: 1200px;
     height: 320px;
-    margin-right: 222px;
-    margin-left: 222px;
-    display: block;
+    /* display: block; */
     float: left;
     margin-top: 20px;
+    background-color: #ed3333;
 }
