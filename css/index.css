@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     width: 100%;
     height: auto;
@@ -149,6 +153,8 @@ body{
     background-color: #ed3333;
     justify-content: space-between;
 }
+
+/* banner左侧开始 */
 .bannerLeft{
     width: 230px;
     height: 280px;
@@ -178,3 +184,6 @@ body{
     font-weight: 300;
     line-height: 40px;
 }
+/* banner左侧结束 */
+
+/* 轮播图开始 */
