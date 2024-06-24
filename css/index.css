@@ -41,10 +41,18 @@
 .topNode .searchNode .searchNodeLeft .searchNodeLeftText{
     width: 28px;
     height: 18px;
+    margin-top: 8px;
+    /* line-height: 36px; */
+    float: left;
     font-size: 14px;
-    margin-top: 10px;
-    line-height: 36px;
-    text-align: center;
+}
+.topNode .searchNode .searchNodeLeft .more {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 1px;
+
 }
 .topNode .searchNode .searchNodeInput{
     width: 478.67px;
