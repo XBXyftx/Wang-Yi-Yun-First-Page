@@ -9,32 +9,25 @@
     background-color:#fff; 
     margin-right: 178px;
 }
-.topNode .topNodeContent{
-    width: 1206px;
-    height: 100%;
-    margin: 0 auto;
-    /* background-color: white; */
-}
-.topNode .topNodeContent .logo{
+.topNode .logo{
     margin-top: 30px;
     width: 140px;
     height: 26px;
 }
-.topNode .topNodeContent .logo .log1{
-    width: 100%;
-    height: 100%;
+.topNode .logo .log1{
+    width: 140px;
+    height: 26px;
 }
 
-.topNode .topNodeContent .searchNode{
+.topNode .searchNode{
     width: 546px;
     height: 38px;
     border: rgb(255, 63, 41) 1px solid;
     border-radius: 6px;
     margin-top: 20px;
     margin-left: 40px;
-    
 }
-.topNode .topNodeContent .searchNode{
+.topNode .searchNode{
     height: 100%;
     width: 87px;
 }
