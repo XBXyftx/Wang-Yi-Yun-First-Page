@@ -1,4 +1,4 @@
-
+/* 置顶栏开始 */
 .topNode{
     height: 56px;
     width: 1200px;
@@ -116,4 +116,16 @@
     float: right;
     margin-top: 10px;
     margin-left: 8px;
+}
+/* 置顶栏结束 */
+
+/* 轮播图大区开始 */
+.bannerArea{
+    width: 1200px;
+    height: 320px;
+    margin-right: 222px;
+    margin-left: 222px;
+    display: block;
+    float: left;
+    margin-top: 20px;
 }
