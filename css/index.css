@@ -8,11 +8,15 @@
     width: 1200px;
     background-color:#fff; 
     margin-right: 178px;
+    display: block;
+    line-height: 21px;
+    text-align: left;
 }
 .topNode .logo{
-    margin-top: 30px;
     width: 140px;
     height: 26px;
+    float: left;
+    margin-top: 9px;
 }
 .topNode .logo .log1{
     width: 140px;
@@ -21,13 +25,31 @@
 
 .topNode .searchNode{
     width: 546px;
-    height: 38px;
+    height: 36px;
     border: rgb(255, 63, 41) 1px solid;
     border-radius: 6px;
-    margin-top: 20px;
     margin-left: 40px;
+    float: left;
+    margin-top: 9px;
 }
-.topNode .searchNode{
-    height: 100%;
-    width: 87px;
+.topNode .searchNode .searchNodeLeft{
+    float: left;
+    width: 42px;
+    height: 38px;
+    margin-left: 12px;
+}
+.topNode .searchNode .searchNodeInput{
+    width: 478.67px;
+    height: 33px;
+    float: left;
+    padding: 0;
+    border: 0;
+}
+.topNode .searchNode .searchNodeLeft .searchNodeLeftText{
+    width: 28px;
+    height: 18px;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 36px;
+    text-align: center;
 }
