@@ -1,16 +1,17 @@
-*_{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 .topNode{
     height: 56px;
     width: 1200px;
     background-color:#fff; 
-    margin-right: 178px;
+    margin-right: 222px;
+    margin-left: 222px;
     display: block;
     line-height: 21px;
     text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
 }
 .topNode .logo{
     width: 140px;
@@ -28,7 +29,7 @@
     height: 36px;
     border: rgb(255, 63, 41) 1px solid;
     border-radius: 6px;
-    margin-left: 40px;
+    margin-left: 22px;
     float: left;
     margin-top: 9px;
 }
@@ -62,7 +63,7 @@
     border: 0;
 } 
 .topNode .searchNode .textInput{
-    width: 408px;
+    width: 418px;
     height: 35px;
     float: left;
     padding: 0;
@@ -71,7 +72,7 @@
     margin-left: 12px;
 }
 .topNode .searchNode .searchNodeInputTextButton{
-    width: 70px;
+    width: 60px;
     height: 37px;
     background-color: rgb(255, 63, 41);
     border-top-right-radius: 6px;
@@ -79,9 +80,40 @@
     float:right;
     text-align: center;
 }
-.topNode .searchNode .searchNodeInputTextButton .text1{
+.topNode .searchNode .searchNodeInputTextButton .text0{
     font-size: 14px;
     text-align: center;
     line-height: 36px;
     color: #fff;
+}
+.topNode .topNodeRight{
+    width: 400px;
+    height: 56px;
+    float: left;
+    margin-left: 90px;
+}
+.topNode .topNodeRight .topNodeRightLogIn{
+    float: left;
+    font-size: 16px;
+    color: #333;
+    font-weight: 300;
+    height: 56px;
+    line-height: 56px;
+}
+
+.topNode .topNodeRight .topNodeRightLogIn a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.topNode .topNodeRight .topNodeRightLogIn .text1{
+    margin-right: 20px;
+}
+.topNode .topNodeRight .topNodeRightLogIn .headNone{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 8px;
 }
