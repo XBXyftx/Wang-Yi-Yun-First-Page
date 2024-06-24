@@ -16,7 +16,7 @@
     width: 140px;
     height: 26px;
     float: left;
-    margin-top: 9px;
+    margin-top: 14px;
 }
 .topNode .logo .log1{
     width: 140px;
@@ -41,7 +41,7 @@
 .topNode .searchNode .searchNodeLeft .searchNodeLeftText{
     width: 28px;
     height: 18px;
-    margin-top: 8px;
+    margin-top: 7px;
     /* line-height: 36px; */
     float: left;
     font-size: 14px;
@@ -50,14 +50,37 @@
     width: 10px;
     height: 10px;
     float: left;
-    margin-top: 15px;
+    margin-top: 14px;
     margin-left: 1px;
 
 }
 .topNode .searchNode .searchNodeInput{
-    width: 478.67px;
+    width: 492px;
     height: 35px;
     float: left;
     padding: 0;
     border: 0;
+} 
+.topNode .searchNode .textInput{
+    width: 420px;
+    height: 35px;
+    float: left;
+    padding: 0;
+    border: 0;
+    margin-top: 1px;
+}
+.topNode .searchNode .searchNodeInputTextButton{
+    width: 70px;
+    height: 37px;
+    background-color: rgb(255, 63, 41);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    float:right;
+    text-align: center;
+}
+.topNode .searchNode .searchNodeInputTextButton .text1{
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
 }
