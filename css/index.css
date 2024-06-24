@@ -199,3 +199,60 @@ body{
     height: 320px;
     image-rendering: auto !important;
 }
+#circle{
+	height: 20px;
+	display: flex;
+	position: absolute;
+	bottom: 35px;
+	right: 25px;
+    list-style: none !important;
+}
+.circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+	margin: 5px;
+}
+#btn-left{
+	width: 30px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left:5px;
+	z-index: 10;/*始终显示在图片的上层*/
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-60%);/*使按钮向上偏移居中对齐*/
+	cursor: pointer;
+	opacity: 0;/*平时隐藏*/
+}
+.lunbo:hover #btn-left{
+	/*鼠标滑入，显示图标*/
+	opacity: 1;
+}
+
+#btn-right{
+	width: 26px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgb(12, 200, 238);
+	line-height: 69px;
+	padding-left: 5px;
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(-60%);
+}
+.lunbo:hover #btn-right{
+	opacity: 1;
+}
