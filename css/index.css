@@ -139,7 +139,6 @@ body{
     height: 340px;
     float: left;
     text-align: center;
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -147,10 +146,8 @@ body{
 .bannerArea{
     width: 1200px;
     height: 320px;
-    /* display: block; */
     float: left;
     margin-top: 20px;
-    background-color: #ed3333;
     justify-content: space-between;
     display: flex;
 }
@@ -255,4 +252,10 @@ body{
 }
 .lunbo:hover #btn-right {
     opacity: 1;
+}
+.bannerRight{
+    width: 230px;
+    height: 320px;
+    display: flexbox;
+    background-color: #fff;
 }
