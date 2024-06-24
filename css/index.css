@@ -152,6 +152,7 @@ body{
     margin-top: 20px;
     background-color: #ed3333;
     justify-content: space-between;
+    display: flex;
 }
 
 /* banner左侧开始 */
@@ -187,3 +188,14 @@ body{
 /* banner左侧结束 */
 
 /* 轮播图开始 */
+.banner {
+    width: 718px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+.bannerImg{
+    width: 718px;
+    height: 320px;
+    image-rendering: auto !important;
+}
