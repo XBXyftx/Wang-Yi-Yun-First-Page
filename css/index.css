@@ -15,10 +15,11 @@ body{
     background-color: #fff; 
     float: left;
     justify-content: center;
-    position: absolute;
+    position:fixed;
     top: 0px;
     left: 0px;
     display: flex;
+    z-index: 10;
    
 }
 .topNode{
@@ -365,6 +366,7 @@ body{
     background-color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    width: 291px;
 }
 .openCardImg{
     height: 164px;
@@ -387,7 +389,7 @@ body{
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 8px;
-    overflow: hidden;
+    overflow: visible !important;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -436,7 +438,7 @@ body{
 /* 精品课开始 */
 .uLessonBase{
     font-family: PingFang SC;
-    width: 1200px;
+    width: 1212px;
     margin: 0 auto;
 }
 .uLessonArea{
@@ -463,6 +465,7 @@ body{
     background-color: #fff;
     border-radius: 10px;
     offset: 0px 0px;
+    width: 291px;
 }
 .uLesCardImg{
     height: 164px;
@@ -488,6 +491,7 @@ body{
     font-size: 16px;
     color: #333;
     margin-bottom: 12px;
+    overflow:visible !important;
 }
 .uLesCardBottomTime{
     height: 17px;
@@ -498,6 +502,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow:hidden;
 }
 .uLesCardBottomTeacher{
     padding-bottom: 14px;
@@ -537,5 +542,12 @@ body{
 }
 .uLesCard:hover{
     box-shadow:  0px 0px 8px 3px #05e8ec;
+}
+.priceLogo{
+    font-size: 12px;
+    color: #ff1d00;
+}
+.uLesCardImg#uLesCardFinal{
+    margin: 0px;
 }
 /* 精品课结束 */
