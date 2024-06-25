@@ -60,6 +60,7 @@ body{
     margin-top: 7px;
     float: left;
     font-size: 14px;
+    cursor: pointer;
 }
 .topNode .searchNode .searchNodeLeft .more {
     width: 10px;
@@ -67,6 +68,7 @@ body{
     float: left;
     margin-top: 14px;
     margin-left: 1px;
+    cursor: pointer;
 
 }
 .topNode .searchNode .searchNodeInput{
@@ -131,6 +133,13 @@ body{
     margin-top: 10px;
     margin-left: 8px;
 }
+.text{
+    color: #000;
+}
+.text1:hover,.text:hover,.text2:hover{
+    color: blue;
+    cursor: pointer;
+}
 /* 置顶栏结束 */
 
 /* 轮播图大区开始 */
@@ -176,11 +185,19 @@ body{
     font-weight: 600;
     line-height: 40px;
 }
+.span1:hover{
+    color: rgb(255, 63, 41);
+    cursor: pointer;
+}
 .span2{
     font-size: 14px;
     color: #333333;
     font-weight: 300;
     line-height: 40px;
+}
+.span2:hover{
+    color: rgb(11, 207, 238);
+    cursor: pointer;
 }
 /* banner左侧结束 */
 
@@ -277,6 +294,7 @@ body{
 .toolMore{
     width: 230px;
     height: 27px;
+    cursor: pointer;
 }
 .toolListMore{
     width: 10px;
@@ -346,6 +364,7 @@ body{
     margin: 0 12px 0 0;
     background-color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 .openCardImg{
     height: 164px;
@@ -409,4 +428,48 @@ body{
 .openCard#openCardFinal{
     margin: 0px;
 }
+.openCard:hover{
+    box-shadow:  0px 0px 5px 8px #bcbbbb;
+}
 /* 直播公开课结束 */
+
+/* 精品课开始 */
+.uLessonBase{
+    font-family: PingFang SC;
+    width: 1200px;
+    margin: 0 auto;
+}
+.uLessonArea{
+    margin-top: 50px;
+    width: 100%;
+}
+.uLessonTitle{
+    margin-bottom: 0;
+    height: 34px;
+    line-height: 34px;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: PingFang SC;
+    color: #333;
+    position: relative;
+}
+.uLessonlist{
+    margin-top: 16px
+}
+.uLesCard{
+    float: left;
+    margin: 0 12px 24px 0;
+    cursor: pointer;
+}
+.uLesCardImg{
+    height: 164px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.uLesCardBottom{
+    padding: 8px 8px 12px;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+/* 精品课结束 */
