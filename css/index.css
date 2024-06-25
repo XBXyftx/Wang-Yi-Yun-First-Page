@@ -429,7 +429,7 @@ body{
     margin: 0px;
 }
 .openCard:hover{
-    box-shadow:  0px 0px 5px 8px #bcbbbb;
+    box-shadow:  0px 0px 8px 5px #969595;
 }
 /* 直播公开课结束 */
 
@@ -460,16 +460,82 @@ body{
     float: left;
     margin: 0 12px 24px 0;
     cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    offset: 0px 0px;
 }
 .uLesCardImg{
     height: 164px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .uLesCardBottom{
     padding: 8px 8px 12px;
     transform: translateZ(0);
     -webkit-font-smoothing: subpixel-antialiased;
+}
+.uLesCardBottomHead{
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+}
+.uLesCardBottomTime{
+    height: 17px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+    margin-bottom: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.uLesCardBottomTeacher{
+    padding-bottom: 14px;
+    border-bottom: 0.5px solid rgba(153, 153, 153, 0.15);
+    height: 65px;
+    color: #666;
+    height: 17px;
+    font-size: 12px;
+    line-height: 17px;
+}
+.uLesCardBottomCost{
+    margin-top: 14px;
+    height: 35px;
+    position: relative;
+}
+.costLeft{
+    overflow: hidden;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+.buyPeople{
+    color: #818a92;
+    font-weight: 300;
+}
+.costRight{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.price{
+    display: inline-block;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ff1d00;
+}
+.uLesCard:hover{
+    box-shadow:  0px 0px 8px 3px #05e8ec;
 }
 /* 精品课结束 */
