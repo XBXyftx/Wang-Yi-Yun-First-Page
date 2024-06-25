@@ -295,7 +295,7 @@ body{
     justify-content: center;
 }
 .liveOpenArea{
-    width: 1200px;
+    width: 1212px;
     margin-left: 0 auto;
     margin-right: 0 auto;
     margin-top: 40px;
@@ -405,5 +405,8 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.openCard#openCardFinal{
+    margin: 0px;
 }
 /* 直播公开课结束 */
