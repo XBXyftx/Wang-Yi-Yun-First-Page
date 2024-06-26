@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(204, 207, 208);
+    display: block !important;
+}
+/* 置顶栏开始 */
+.topBase{
+    width: 100%;
+    height: auto;
+    background-color: #fff; 
+    float: left;
+    justify-content: center;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 10;
+   
+}
+.topNode{
+    height: 56px;
+    width: 1200px;
+    background-color:#fff; 
+    line-height: 21px;
+    float: left;
+}
+.topNode .logo{
+    width: 140px;
+    height: 26px;
+    float: left;
+    margin-top: 14px;
+}
+.topNode .logo .log1{
+    width: 140px;
+    height: 26px;
+}
+
+.topNode .searchNode{
+    width: 546px;
+    height: 36px;
+    border: rgb(255, 63, 41) 1px solid;
+    border-radius: 6px;
+    margin-left: 22px;
+    float: left;
+    margin-top: 9px;
+}
+.topNode .searchNode .searchNodeLeft{
+    float: left;
+    width: 42px;
+    height: 38px;
+    margin-left: 12px;
+}
+.topNode .searchNode .searchNodeLeft .searchNodeLeftText{
+    width: 28px;
+    height: 18px;
+    margin-top: 7px;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+.topNode .searchNode .searchNodeLeft .more {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 14px;
+    margin-left: 1px;
+    cursor: pointer;
+
+}
+.topNode .searchNode .searchNodeInput{
+    width: 492px;
+    height: 35px;
+    float: left;
+    padding: 0;
+    border: 0;
+} 
+.topNode .searchNode .textInput{
+    width: 418px;
+    height: 35px;
+    float: left;
+    padding: 0;
+    border: 0;
+    margin-top: 1px;
+    margin-left: 12px;
+}
+.topNode .searchNode .searchNodeInputTextButton{
+    width: 60px;
+    height: 37px;
+    background-color: rgb(255, 63, 41);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    float:right;
+    text-align: center;
+    cursor: pointer;
+}
+.searchNodeInputTextButton:hover{
+    background-color: rgb(249, 159, 4) !important;
+}
+.topNode .searchNode .searchNodeInputTextButton .text0{
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+}
+.topNode .topNodeRight{
+    width: 400px;
+    height: 56px;
+    float: left;
+    margin-left: 90px;
+}
+.topNode .topNodeRight .topNodeRightLogIn{
+    float: left;
+    font-size: 16px;
+    color: #333;
+    font-weight: 300;
+    height: 56px;
+    line-height: 56px;
+}
+
+.topNode .topNodeRight .topNodeRightLogIn a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.topNode .topNodeRight .topNodeRightLogIn .text1{
+    margin-right: 20px;
+}
+.topNode .topNodeRight .topNodeRightLogIn .headNone{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.text{
+    color: #000;
+}
+.text1:hover,.text:hover,.text2:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* 置顶栏结束 */
+
+/* 路径区域开始 */
+.pagePathBase{
+    background-color: #fff;
+    color: #666;
+    font-size: 0;
+    height: 60px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.pagePath{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    width: 1205px;
+    margin: 0 auto;
+    text-align: left;
+    zoom: 1;
+}
+.pagePathLi{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0;
+}
+.pagePathLi a{
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+.pagePathCurrent{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0;
+}
+.arrow{
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin: 0 10px;
+}
+.pagePathCurrent a{
+    cursor: default;
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* 路径区域结束 */

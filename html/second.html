@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../JS/second.js"></script>
+    <title>Second Page</title>
+    <script src="../JS/second.js" defer></script>
     <link rel="stylesheet" href="../css/second.css">
 </head>
 <body>
-    <div id="msg"></div>
+    
+    <!-- 置顶栏开始 -->
+    <div class="topBase">
+        <div class="topNode">
+            <!-- 左侧图标 -->
+            <a href="#" class="logo">
+                <img src="../image/log1.png" alt="logo" class="log1" >
+            </a> 
+            <!-- 中央搜索栏 -->
+            <div class="searchNode">
+                <div class="searchNodeLeft">
+                    <span class="searchNodeLeftText">
+                        课程       
+                    </span>
+                    <img src="../image/more (2).svg" class="more">
+                </div>
+
+                <div class="searchNodeInput">
+                    <input type="text" id="user" class="textInput" placeholder="">
+                    <div class="searchNodeInputTextButton" id="mySpan">
+                        <span class="text0">
+                            提交
+                        </span>
+                    </div>
+                </div>
+
+            <!-- 右侧选项区域 -->
+            </div>
+            <div class="topNodeRight">
+                <div class="topNodeRightLogIn">
+                    <span class="text1"><a href="#">下载app</a></span>
+                    <span class="text2">会员中心 &nbsp;</span>|&nbsp;
+                    <span class="text2">我的学习 &nbsp;</span> |&nbsp; 
+                    <span class="text">登录</span>
+                    <span class="text">/</span>
+                    <span class="text">注册</span>
+                    <img src="../image/headNone.jpg" class="headNone">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- 置顶栏结束 -->
+
+    <!-- 路径区域开始 -->
+     <div class="pagePathBase">
+        <ul class="pagePath">
+            <li class="pagePathLi">
+                <a href="../html/index.html">首页</a>
+            </li>
+            <li class="pagePathCurrent">
+                <img src="../image/pagePath.png" class="arrow">
+                <a href="#">搜索结果</a>
+            </li>
+        </ul>
+     </div>
+    <!-- 路径区域结束 -->
+
+    <!--  -->
+
+
+    <!-- <p id="display"></p> -->
 </body>
 </html>
