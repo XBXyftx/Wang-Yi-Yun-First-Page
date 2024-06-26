@@ -240,5 +240,7 @@ body{
     background-color: rgb(249, 159, 4) !important;
     color: #fff;
 }
-
+#sort.searchList{
+    margin-right: 60px;
+}
 /* 搜索结果区结束 */
