@@ -1,4 +1,4 @@
-window.onload=function(){
+window.onload = function(){
     /***
      *读取指定的Cookie值
      *@param {string} cookieName Cookie名称
@@ -6,6 +6,7 @@ window.onload=function(){
 
      function ReadCookie(cookie_name){
         alert("ReadCookie");
+        alert(document.cookie);
         //判断是否存在cookie
         if (document.cookie.length > 0){
             //查询cookie开始部分

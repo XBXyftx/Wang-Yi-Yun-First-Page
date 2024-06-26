@@ -91,7 +91,8 @@ window.onload = function() {
          */
     function SetCookie(cookieName,cookieValue) {
         /*设置Cookie值*/
-        document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + ";path=/";
+        document.cookie = `${encodeURIComponent(cookieName)}=${encodeURIComponent(cookieValue)}`;
+        // document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + ";path=/";
         // encodeURIComponent用于编码字符串防止乱码发生
         // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
     }
