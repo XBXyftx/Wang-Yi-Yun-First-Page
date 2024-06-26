@@ -67,7 +67,56 @@
      </div>
     <!-- 路径区域结束 -->
 
-    <!--  -->
+    <!-- 搜索结果区开始 -->
+     <div class="searchResultBase">
+        <div class="searchResultNode">
+            未找到关键词“<span id="display"></span>”相关资源<br>
+            <br>
+            <span class="select">您可以尝试用以下方式选择搜索范围</span>
+        </div>
+        <div class="searchResultList">
+            资源类型:    
+            <select name="" class="searchList" id="type">
+                <option value="all">全部</option>
+                <option value="course">课程</option>
+                <option value="video">视频</option>
+                <option value="article">文章</option>
+                <option value="question">问答</option>
+                <option value="test">测试</option>
+            </select>
+
+            价格:
+            <select name="" class="searchList" id="price">
+                <option value="all">全部</option>
+                <option value="free">免费</option>
+                <option value="pay">0-50￥/H</option>
+                <option value="pay">50-100￥/H</option>
+                <option value="pay">100-200￥/H</option>
+                <option value="pay">200-300￥/H</option>
+                <option value="pay">300-500￥/H</option>
+            </select>
+
+            难度:
+            <select name="" class="searchList" id="difficulty">
+                <option value="all">全部</option>
+                <option value="easy">初级</option>
+                <option value="middle">中级</option>
+                <option value="hard">高级</option>
+            </select>
+
+            排序:
+            <select name="" class="searchList" id="sort">
+                <option value="all">默认</option>
+                <option value="new">最新</option>
+                <option value="hot">最热</option>
+            </select>
+
+            上课方式：
+            <input type="checkbox" name="onoffline"> 线上
+            <input type="checkbox" name="onoffline"> 线下
+        </div>
+     </div>
+    <!-- 搜索结果区结束 -->
 
 
     <!-- <p id="display"></p> -->

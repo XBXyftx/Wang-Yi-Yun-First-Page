@@ -152,10 +152,10 @@ body{
     background-color: #fff;
     color: #666;
     font-size: 0;
-    height: 60px;
+    height: 45px;
     padding-top: 20px;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .pagePath{
     display: block;
@@ -200,3 +200,45 @@ body{
     text-decoration: none;
 }
 /* 路径区域结束 */
+
+/* 搜索结果区开始 */
+.searchResultBase{
+    width: 100%;
+    height: auto !important;
+    color: #000;
+    text-align: center;
+}
+.searchResultNode{
+    width: 1200;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    font-size: 20px;
+    overflow: hidden;
+}
+.select{
+    font-size: 24px;
+    font-weight: 600;
+}
+.searchResultList{
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    font-size: 18px;
+}
+.searchList{
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    padding-right: 30px;
+}
+
+.searchList:hover{
+    background-color: rgb(249, 159, 4) !important;
+    color: #fff;
+}
+
+/* 搜索结果区结束 */
