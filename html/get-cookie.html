@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Get Cookie</title>  
+</head>  
+<body>  
+    <h1>Get Cookie Example</h1>  
+  
+    <script>  
+        // 读取cookie的函数  
+        function getCookie(name) {  
+            var nameEQ = name + "=";  
+            var ca = document.cookie.split(';');  
+            for(var i=0;i < ca.length;i++) {  
+                var c = ca[i];  
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);  
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);  
+            }  
+            return null;  
+        }  
+  
+        // 使用函数读取cookie  
+        var username = getCookie("username");  
+        if (username) {  
+            alert("Welcome back, " + username + "!");  
+        } else {  
+            alert("No username cookie found.");  
+        }  
+    </script>  
+</body>  
+</html>

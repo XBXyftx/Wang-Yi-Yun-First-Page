@@ -91,19 +91,24 @@ window.onload = function() {
          */
     function SetCookie(cookieName,cookieValue) {
         /*设置Cookie值*/
-        document.cookie = cookieName + "=" + encodeURIComponent(cookieValue)
+        document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + ";path=/";
         // encodeURIComponent用于编码字符串防止乱码发生
         // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
     }
     function login() {
-        alert("a")
+        alert("Login")
         var searchCookie = $("user").value;
             if(searchCookie.length>0 && searchCookie) {
                 SetCookie("searchCookie", searchCookie);
                 /*second.html*/
                 document.location = "../html/second.html";
+                // window.location.href="../html/second.html";
             }
     }
+
+    let mySpan = document.querySelector("#mySpan")
+    mySpan.addEventListener("click", login);
+
     function $(id) {
         return document.getElementById(id);
     }

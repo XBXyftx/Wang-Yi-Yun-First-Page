@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Set Cookie</title>  
+</head>  
+<body>  
+    <h1>Set Cookie Example</h1>  
+    <a href="./get-cookie.html">a</a>
+  
+    <script>  
+        // 设置cookie的函数  
+        function setCookie(name, value, days) {  
+            var expires = "";  
+            if (days) {  
+                var date = new Date();  
+                date.setTime(date.getTime() + (days*24*60*60*1000));  
+                expires = "; expires=" + date.toUTCString();  
+            }  
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/";  
+        }  
+  
+        // 使用函数设置cookie  
+        setCookie("username", "JohnDoe", 7); // 设置名为username的cookie，值为JohnDoe，有效期7天  
+    </script>  
+</body>  
+</html>

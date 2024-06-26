@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>b</title>
+    <script type="text/javascript">
+        /***
+            *读取指定的Cookie值
+            * @param {string} cookieName Cookie名称
+            */
+
+        function ReadCookie(cookie_name){
+            alert("ReadCookie")
+            //判断是否存在cookie
+            if (document.cookie.length > 0){
+                alert("length");
+                //查询cookie开始部分
+                cookie_start = document.cookie.indexOf(cookie_name + "=");
+                //如果存在
+                if (cookie_start != -1){
+                    //计算结束部分
+                    
+                    alert(cookie_start);
+                    cookie_start = cookie_start + cookie_name.length + 1;
+                    cookie_end = document.cookie.indexOf(";", cookie_start);
+                    //如果已经是最后一个cookie值，则取cookie长度
+                    if (cookie_end == -1) {
+                        cookie_end = document.cookie.length;
+                    }
+                    //获取cookie值，unescape对特殊字符解密
+                    return unescape(document.cookie.substring(cookie_start,cookie_end));
+                }
+            }
+            //其它情况返回空
+            return "";
+        }
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function init() {
+            // alert()
+            var username = ReadCookie("username");
+            if(username && username.length>0) {
+                $("msg").innerHTML = "<h1>欢迎光临," + username + "!</h1>";
+            } else {
+                $("msg").innerHTML = "<a href='./a.html'>请录入名字</a>";
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+<div id="msg"></div>
+</body>
+</html>

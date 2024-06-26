@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>a</title>
+    <script type="text/javascript">
+        /***
+         * @param {string} cookieName Cookie名称
+         * @param {string} cookieValue Cookie值
+         */
+        function SetCookie(cookieName,cookieValue) {
+            /*设置Cookie值*/
+            // document.cookie = cookieName + "=" + escape(cookieValue);
+            setCookie('username', 'john_doe');
+            // document.cookie.addCookie("cookieName");
+            alert("SetCookie");
+            alert(document.cookie);
+        }
+        function login() {
+            // alert("Login");
+            var user = $("user").value;
+            alert(user);
+                if(user.length>0 && user) {
+                    alert(user); 
+                    SetCookie("user", user);
+                    alert("cookie.do"+document.cookie);
+                    /*跳转到b.html页面*/
+                    document.location = "b.html";
+                    
+                }
+        }
+        function $(id) {
+            return document.getElementById(id);
+        }
+    </script>
+</head>
+<body>
+<div id="main">
+    <div><span>请输入你的名字</span><input type="text" id="user" /></div>
+    <div>
+        <input type="button" onclick="login()" value="提交" />
+    </div>
+</div>
+</body>
+</html>

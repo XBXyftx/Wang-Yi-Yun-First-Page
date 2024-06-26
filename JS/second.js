@@ -5,6 +5,7 @@ window.onload=function(){
      */
 
      function ReadCookie(cookie_name){
+        alert("ReadCookie");
         //判断是否存在cookie
         if (document.cookie.length > 0){
             //查询cookie开始部分
@@ -30,7 +31,12 @@ window.onload=function(){
         return document.getElementById(id);
     }
 
+    window.onload=function(){
+        init();
+    }
+
     function init() {
+        alert("init")
         var searchCookie = ReadCookie("searchCookie");
         if(searchCookie && searchCookie.length>0) {
             $("msg").innerHTML = "<h1>您的搜索关键词为" + searchCookie + "!</h1>";
