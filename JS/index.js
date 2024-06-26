@@ -96,11 +96,12 @@ window.onload = function() {
         // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
     }
     function login() {
+        alert("a")
         var searchCookie = $("user").value;
             if(searchCookie.length>0 && searchCookie) {
                 SetCookie("searchCookie", searchCookie);
-                /*跳转到b.html页面*/
-                document.location = "b.html";
+                /*second.html*/
+                document.location = "../html/second.html";
             }
     }
     function $(id) {
