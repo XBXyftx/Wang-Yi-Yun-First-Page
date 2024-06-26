@@ -83,4 +83,28 @@ window.onload = function() {
 
     // 页面加载完成后，启动自动播放
     startAutoPlay();
+
+    // 利用cookie进行页面间数据传递
+    /***
+         * @param {string} cookieName Cookie名称
+         * @param {string} cookieValue Cookie值
+         */
+    function SetCookie(cookieName,cookieValue) {
+        /*设置Cookie值*/
+        document.cookie = cookieName + "=" + encodeURIComponent(cookieValue)
+        // encodeURIComponent用于编码字符串防止乱码发生
+        // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
+    }
+    function login() {
+        var searchCookie = $("user").value;
+            if(searchCookie.length>0 && searchCookie) {
+                SetCookie("searchCookie", searchCookie);
+                /*跳转到b.html页面*/
+                document.location = "b.html";
+            }
+    }
+    function $(id) {
+        return document.getElementById(id);
+    }
+
 };

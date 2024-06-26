@@ -96,6 +96,10 @@ body{
     border-bottom-right-radius: 6px;
     float:right;
     text-align: center;
+    cursor: pointer;
+}
+.searchNodeInputTextButton:hover{
+    background-color: rgb(249, 159, 4) !important;
 }
 .topNode .searchNode .searchNodeInputTextButton .text0{
     font-size: 14px;
