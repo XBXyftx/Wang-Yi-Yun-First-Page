@@ -84,34 +84,60 @@ window.onload = function() {
     // 页面加载完成后，启动自动播放
     startAutoPlay();
 
-    // 利用cookie进行页面间数据传递
-    /***
-         * @param {string} cookieName Cookie名称
-         * @param {string} cookieValue Cookie值
-         */
-    function SetCookie(cookieName,cookieValue) {
-        /*设置Cookie值*/
-        document.cookie = `${encodeURIComponent(cookieName)}=${encodeURIComponent(cookieValue)}`;
-        // document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + ";path=/";
-        // encodeURIComponent用于编码字符串防止乱码发生
-        // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
-    }
-    function login() {
-        alert("Login")
-        var searchCookie = $("user").value;
-            if(searchCookie.length>0 && searchCookie) {
-                SetCookie("searchCookie", searchCookie);
-                /*second.html*/
-                document.location = "../html/second.html";
-                // window.location.href="../html/second.html";
+    // // 利用cookie进行页面间数据传递
+    // /***
+    //      * @param {string} cookieName Cookie名称
+    //      * @param {string} cookieValue Cookie值
+    //      */
+    // function SetCookie(cookieName,cookieValue) {
+    //     /*设置Cookie值*/
+    //     document.cookie = `${encodeURIComponent(cookieName)}=${encodeURIComponent(cookieValue)}`;
+    //     // document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + ";path=/";
+    //     // encodeURIComponent用于编码字符串防止乱码发生
+    //     // escape()的编码方法已经过时encodeURIComponent可以更有效的阻止乱码
+    // }
+    // function login() {
+    //     alert("Login")
+    //     var searchCookie = $("user").value;
+    //         if(searchCookie.length>0 && searchCookie) {
+    //             SetCookie("searchCookie", searchCookie);
+    //             /*second.html*/
+    //             document.location = "../html/second.html";
+    //             // window.location.href="../html/second.html";
+    //         }
+    // }
+
+    // let mySpan = document.querySelector("#mySpan")
+    // mySpan.addEventListener("click", login);
+
+    // function $(id) {
+    //     return document.getElementById(id);
+    // }
+    // cookie未能成功因为浏览器会自动对本地文件发送给本地文件的cookie进行拦截
+
+
+    // 以下是对url传递方法的尝试
+    document.addEventListener("click", function() {
+        // 获取按钮和输入框的DOM元素
+        // alert("DOMContentLoaded")
+        const mySpan = document.getElementById("mySpan");
+        const userInput = document.getElementById("user");
+
+        // 为按钮添加点击事件监听器
+        mySpan.addEventListener("click", function() {
+            // 获取输入框的值
+            const userText = userInput.value;
+
+            // 检查输入框是否有值
+            if (userText) {
+                // 创建带有输入框内容作为参数的URL
+                const url = `../html/second.html?user=${encodeURIComponent(userText)}`;
+                // 跳转到新的URL（second.html页面）
+                window.location.href = url;
             }
-    }
+        });
+    });
 
-    let mySpan = document.querySelector("#mySpan")
-    mySpan.addEventListener("click", login);
-
-    function $(id) {
-        return document.getElementById(id);
-    }
+    
 
 };
