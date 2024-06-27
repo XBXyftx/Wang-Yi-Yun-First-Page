@@ -14,13 +14,12 @@ body{
     height: auto;
     background-color: #fff; 
     float: left;
-    justify-content: center;
     position:absolute;
     top: 0px;
     left: 0px;
-    display: flex;
     z-index: 10;
-   
+    justify-content: center;
+    display: flex;      
 }
 .topNode{
     height: 56px;
@@ -45,8 +44,8 @@ body{
     height: 36px;
     border: rgb(255, 63, 41) 1px solid;
     border-radius: 6px;
-    margin-left: 22px;
     float: left;
+    margin-left: 22px; 
     margin-top: 9px;
 }
 .topNode .searchNode .searchNodeLeft{
