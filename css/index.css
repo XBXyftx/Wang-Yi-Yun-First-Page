@@ -54,14 +54,18 @@ body{
     width: 42px;
     height: 38px;
     margin-left: 12px;
+    text-decoration: none;
+    border: 0;
 }
 .topNode .searchNode .searchNodeLeft .searchNodeLeftText{
-    width: 28px;
+    width: auto;
     height: 18px;
-    margin-top: 7px;
+    margin-top: 10px;
     float: left;
-    font-size: 14px;
+    font-size: 8px;
     cursor: pointer;
+    text-decoration: none;
+    border: 0;
 }
 .topNode .searchNode .searchNodeLeft .more {
     width: 10px;
