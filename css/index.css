@@ -62,7 +62,7 @@ body{
     height: 18px;
     margin-top: 10px;
     float: left;
-    font-size: 8px;
+    font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     border: 0;
@@ -259,7 +259,9 @@ body{
     /*鼠标滑入，显示图标*/
     opacity: 1;
 }
-
+.lunbo:hover #btn-right {
+    opacity: 1;
+}
 #btn-right {
     width: 26px;
     height: 69px;
@@ -275,9 +277,6 @@ body{
     cursor: pointer;
     opacity: 0;
     transform: translateY(-60%);
-}
-.lunbo:hover #btn-right {
-    opacity: 1;
 }
 /* 轮播图结束 */
 
@@ -349,7 +348,7 @@ body{
     line-height: 20px;
     color: #666;
     right: 0;
-    top: 7px;
+    top: 7px;   
     cursor: pointer;/* 鼠标移入就会变成手指 */
     float: right;
     font-size: 14px;
